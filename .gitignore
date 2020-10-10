@@ -1,0 +1,10 @@
+*_dat
+*_log
+*_logs
+*_data
+*.bak
+.*.swp
+*~
+*.log
+*_run
+*.txt
