@@ -188,9 +188,9 @@ restart_all_ck_zk(){ do_all ${FUNCNAME}; }
 
 ## cluster
 
-start_ck_cluster(){
-  start_all_ck_zk
-  start_all_ck_server
+stop_ck_cluster(){
+  stop_all_ck_server
+  stop_all_ck_zk
 }
 
 destroy_ck_cluster(){
