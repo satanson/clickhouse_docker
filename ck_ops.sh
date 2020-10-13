@@ -51,6 +51,7 @@ destroy_ck_server(){
 
 start_ck_server_args(){
   local node=${1:?"undefined 'ck_server'"};shift
+  local bootstrap=${1:-"false"}
   local ip=$(perl -aF/\\s+/ -ne "print \$F[0] if /\b$node\b/" hosts)
   local flags="
   -v ${PWD}/${node}_data:/home/grakra/ck_server_data
